@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (in case anyone adds tooling later)
+node_modules/
+
+# Build / deploy
+dist/
+.netlify/

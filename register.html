@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Marvelle Cakes</title>
+    <meta name="description" content="Join the Marvelle Inner Circle. Register for early access to seasonal collections, tasting events, and members-only pricing.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="images/logo.png" alt="Marvelle Cakes Logo" class="logo">
+                <span class="brand-name">Marvelle Cakes</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="hero" style="min-height: 35vh;">
+        <div class="hero-inner" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-content">
+                <h1>Join the Inner Circle</h1>
+                <p class="lead" style="margin-left: auto; margin-right: auto;">Register as a Marvelle customer for early access to seasonal collections, tasting events, and members-only pricing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REGISTRATION FORM ========== -->
+    <section class="section">
+        <div class="section-inner">
+            <h2 class="section-title">Customer Registration</h2>
+            <p class="section-subtitle">Tell us a little about yourself &mdash; takes 30 seconds.</p>
+            <div class="form-wrapper">
+                <div id="register-success" class="form-success">Welcome to the Marvelle Inner Circle! You're now on the list.</div>
+
+                <form id="register-form" novalidate>
+                    <div class="form-group">
+                        <label for="reg-name">Full Name</label>
+                        <input type="text" id="reg-name" name="name" placeholder="Jane Doe" required>
+                        <div class="form-error">Please enter your name.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-phone">Phone Number</label>
+                        <input type="tel" id="reg-phone" name="phone" placeholder="+254 7XX XXX XXX" required>
+                        <div class="form-error">Please enter a valid phone number.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-email">Email Address</label>
+                        <input type="email" id="reg-email" name="email" placeholder="jane@example.com" required>
+                        <div class="form-error">Please enter a valid email address.</div>
+                    </div>
+
+                    <button type="submit" class="btn">Join the Inner Circle</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REGISTERED CUSTOMERS LIST ========== -->
+    <section class="section section-alt">
+        <div class="section-inner">
+            <div class="data-section" style="margin-top: 0;">
+                <h2>Registered Customers</h2>
+                <p class="section-subtitle">Stored locally on this device &mdash; for demonstration of customer relationship management.</p>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customers-tbody">
+                            <!-- Rendered by script.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-contact">
+            <span>Westlands, Nairobi, Kenya</span>
+            <span><a href="mailto:info@marvellecakes.com">info@marvellecakes.com</a></span>
+            <span><a href="tel:+254724354012">+254 724 354012</a></span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+        <p class="copyright">&copy; 2026 Marvelle Cakes. Baked with passion in Nairobi, Kenya.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
